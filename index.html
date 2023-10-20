@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Clima</title>
+</head>
+
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto text-center">
+                <div class="card-body">
+                    <h1 id="weather-location" class="h3">Santa Marta / CO</h1>
+                    <h3 id="weather-description" class="h4">scattered clouds</h3>
+                    <h3 id="weather-string">30.03 °C </h3>
+                    <img src="http://openweathermap.org/img/wn/03n@2x.png" alt="image-weather" id="weather-image">
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <span class="badge badge-primary" id="weather-humidity">Humedad: 66% </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <span class="badge badge-primary" id="weather-wind">Viento: 6.69m/s </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <form action="" id="weather-form">
+                            <div class="form-group">
+                                <input type="text" id="city" class="form-control" placeholder="Ciudad" autofocus="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="countryCode" class="form-control"
+                                    placeholder="Código de la ciudad" autofocus="" maxlength="2">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success" id="changeWeather">Obtener</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
